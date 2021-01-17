@@ -1,4 +1,5 @@
 const app = require('express')();
+const port = process.env.PORT || 3000;
 
 app.set('view engine','ejs');
 
@@ -52,6 +53,6 @@ app.get('/campground/new', function(req, res){
 
 
 
-app.listen(3000, function(req, res){
-    console.log('YELPcamp is started on port ', 3000);
+app.listen(port, function(req, res){
+    console.log('YELPcamp is started on port ', port);
 });
